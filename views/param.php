@@ -65,10 +65,23 @@
           <label for="themeThree" class="paramLabel">Thème 3</label>
         </div>
       </div>
-    </div>
-    <div class="row justify-content-center mt-5">
-      <div class="col text-center">
-        <p class="paramTitleParam">Choix du flux RSS</p>
+      <div class="row">
+        <div class="col">
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/technos/" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/technos/") ? "checked" : "" ?> >
+          <label for="artOne" class="paramLabel">Technologie</label>
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/culture-medias/" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/culture-medias/") ? "checked" : "" ?> >
+          <label for="artTwo" class="paramLabel">Culture Médias</label>
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/politique-droits/" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/politique-droits/") ? "checked" : "" ?> >
+          <label for="artThree" class="paramLabel">Politique</label>
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/jeux/" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/jeux/") ? "checked" : "" ?> >
+          <label for="artFour" class="paramLabel">jeux</label>
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" : "" ?> >
+          <label for="artFive" class="paramLabel">Actualités</label>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center mt-2">
