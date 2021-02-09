@@ -1,0 +1,23 @@
+/* Global variables */
+:root{
+  /* variable définie pour que la section ne soit pas vide */
+--colBack: gray;
+}
+
+/* Global styles */
+.navLst{
+  list-style-type: none;
+}
+
+.navLink{
+  text-decoration: none;
+}
+
+/* Index styles */
+.indexImg{
+  width: 50px;
+}
+
+.indexTopicInfos{
+  border: 1px solid;
+}
