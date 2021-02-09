@@ -9,12 +9,53 @@
   color: var(--colTitleSite);
 }
 
-.navLst{
-  list-style-type: none;
+body{
+  background-color: var(--colBackBody);
 }
 
-.navLink{
+.navST{
+  background-color: var(--colBackNav);
+  color: var(--colTxtNav);
+  text-align: center;
+}
+
+.navParamLst, .navIndexLst{
+  list-style-type: none;
+  display: flex;
+}
+
+.navParamLst{
+  justify-content: space-between;
+}
+
+.navIndexLst{
+  justify-content: flex-end;
+}
+
+.navSTLink{
+  height: 32px;
+}
+
+.navSTLinkHome{
+  background-color: var(--colBackNav);
+  color: var(--colTxtNav);
   text-decoration: none;
+  display: block;
+}
+
+nav .navSTLinkHome:hover {
+  background-color: var(--colBackNavLink);
+  color: var(--colTxtNavLink);
+  border-bottom: 2px solid black;
+}
+
+.navSTBtnParam{
+  color: var(--colTxtNav);
+  transition: 450ms;
+}
+
+nav .navSTBtnParam:hover{
+  color: var(--colTxtNavIcon);
 }
 
 /* Index styles */
@@ -27,13 +68,34 @@
 }
 
 /* Param styles */
-.paramEraseCookie{
+.paramSTCreateCookie, .paramSTEraseCookie{
+  width: 225px;
+  height: 36px;
+  background-color: var(--colBackBtn);
+  color: var(--colTxtBtn);
+  transition: transform 450ms, background-color 450ms, color 450ms;
+}
+
+.paramSTCreateCookie{
+  border-radius: 5px;
+}
+
+.paramSTEraseCookieLnk{
   text-decoration: none;
-  border: 1px solid;
-  border-radius: 10px;
+  color: var(--colTxtBtn);
 }
 
 .paramSTEraseCookie{
-  background-color: var(--colBackBtn);
-  color: var(--colTxtBtn);
+  border-radius: 7px;
+  border: 1px solid;
+  padding: 5px 10px;
+  /* transform: scale(1); */
 }
+
+.paramSTCreateCookie:hover, .paramSTEraseCookie:hover, .paramSTEraseCookieLnk:hover{
+  color: var(--colBackBtn);
+  background-color: var(--colTxtBtn);
+  border-color: var(--colBackBtn);
+  transform: scale(1.15);
+}
+
