@@ -72,7 +72,10 @@
           <div class="col-1">
             <i class="fas fa-rss-square"></i>
           </div>
-          <div class="col indexTopicTitle">Voici le titre de l'article <?= $titre ?></div>
+          <div class="col-2 "> <img src=<?= $image['url'] ?> class="img-fluid" >
+
+          </div>
+          <div class="col-6 indexTopicTitle">Voici le titre de l'article <?= $titre ?></div>
           <div class="col-2 indexTopicDate"><?= $date ?></div>
           <div class="col-1">
             <button id=<?php echo "button".$i ?> type="button" class="indexTopicInfos" data-bs-toggle="modal" data-bs-target="#exampleModal">+ infos</button>
