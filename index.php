@@ -12,12 +12,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <!-- Own styles -->
+  <!-- Fixed styles -->
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
       <link rel="stylesheet" href="assets/css/style<?= $_COOKIE['theme'] ?>.css">
     <?php } else { ?>
     <!-- Default style -->
-      <link rel="stylesheet" href="assets/css/style.css?v=1">
+      <link rel="stylesheet" href="assets/css/style1.css?v=1">
     <?php } ?>
   
   <title>Flux RSS</title>
