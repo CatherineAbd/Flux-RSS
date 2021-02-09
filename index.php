@@ -32,21 +32,29 @@
   ?>
 
   <!-- Navigation part (title + parameters button) -->
-  <header>
-    <nav class="navST">
+  <header class="navST sticky-top">
+    <div class="row">
+      <div class="col text-center">
       <h1 class="titleSite">Lecteur de flux RSS</h1>
-      <ul class="navIndexLst">
-        <li class="navItem">
-          <a href="views/param.php" class="navSTBtnParam navSTLink">
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <span class="navItemDisabled">thème <?= isset($_COOKIE['theme']) ? $_COOKIE['theme'] : '1 (défaut)'?></span>
+      <span class="navItemDisabled"><?= isset($_COOKIE['nbTopics']) ? $_COOKIE['nbTopics'] : '5'?> articles affichés</span>
+      <nav class="">
+        <ul class="navIndexLst">
+          <li class="navItem">
+            <a href="views/param.php" class="navSTBtnParam navSTLink">
             <i class="fas fa-2x fa-cog"></i>
           </a>
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <div class="container-fluid">
-    <div class="row text-center">
+    <div class="row text-center mb-5 mt-5">
       <h2 class="titlePage">Les articles du flux RSS trucmuche</h2>
     </div>
     <?php
@@ -68,7 +76,7 @@
       $image = $item->enclosure;
       $arrayModal += array($i =>array('title'=>(string)$titre ,'description'=>strip_tags($description),'lien'=>(string)$lien) );
      ?>
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-1">
             <i class="fas fa-2x fa-rss-square"></i>
           </div>

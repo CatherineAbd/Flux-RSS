@@ -16,7 +16,7 @@ body{
 .navST{
   background-color: var(--colBackNav);
   color: var(--colTxtNav);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .navParamLst, .navIndexLst{
@@ -46,7 +46,7 @@ body{
 nav .navSTLinkHome:hover {
   background-color: var(--colBackNavLink);
   color: var(--colTxtNavLink);
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--colBorderLink);
 }
 
 .navSTBtnParam{
@@ -111,4 +111,3 @@ nav .navSTBtnParam:hover{
   border-color: var(--colBackBtn);
   transform: scale(1.15);
 }
-

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
-      <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css?v=1">
+      <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css">
     <?php } else { ?>
     <!-- Default style -->
       <link rel="stylesheet" href="../assets/css/style1.css?v=1">
@@ -30,9 +30,13 @@
   require "../controllers/param_controller.php";
 ?>
 
-  <header>
-    <nav class="navST">
-      <h1 class="titleSite">Lecteur de flux RSS</h1>
+  <header class="navST">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="titleSite">Lecteur de flux RSS</h1>
+      </div>
+    </div>
+    <nav>
       <ul class="navParamLst">
         <li class="navItem">
           <a href="../index.php" class="navSTLinkHome navSTLink">
@@ -65,37 +69,28 @@
           <label for="themeThree" class="paramLabel">Thème 3</label>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/technos/" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/technos/") ? "checked" : "" ?> >
-          <label for="artOne" class="paramLabel">Technologie</label>
-
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/culture-medias/" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/culture-medias/") ? "checked" : "" ?> >
-          <label for="artTwo" class="paramLabel">Culture Médias</label>
-
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/politique-droits/" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/politique-droits/") ? "checked" : "" ?> >
-          <label for="artThree" class="paramLabel">Politique</label>
-
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/jeux/" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/jeux/") ? "checked" : "" ?> >
-          <label for="artFour" class="paramLabel">jeux</label>
-
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" : "" ?> >
-          <label for="artFive" class="paramLabel">Actualités</label>
-        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col text-center">
+        <p class="paramTitleParam">Choix du flux rss</p>
       </div>
     </div>
     <div class="row justify-content-center mt-2">
       <div class="col-2">
         <div class="paramSTtheme">
-          <input type="radio" class="paramRadio" name="articleTopics" value="Technologie" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Technologie") ? "checked" : "" ?> >
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/technos/" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/technos/") ? "checked" : "" ?> >
           <label for="artOne" class="paramLabel">Technologie</label><br>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Culture Médias" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Culture Médias") ? "checked" : "" ?> >
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/culture-medias/" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/culture-medias/") ? "checked" : "" ?> >
           <label for="artTwo" class="paramLabel">Culture Médias</label><br>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Politique" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Politique") ? "checked" : "" ?> >
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/politique-droits/" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/politique-droits/") ? "checked" : "" ?> >
           <label for="artThree" class="paramLabel">Politique</label><br>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Sports" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Sports") ? "checked" : "" ?> >
-          <label for="artFour" class="paramLabel">Sports</label><br>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Actualités" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "checked" : "" ?> >
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/jeux/" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/jeux/") ? "checked" : "" ?> >
+          <label for="artFour" class="paramLabel">Jeux</label><br>
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" : "" ?> >
           <label for="artFive" class="paramLabel">Actualités</label>
         </div>
       </div>
@@ -122,7 +117,7 @@
         <!-- <input type="submit" value="Enregistrer vos choix" class="paramSTCreateCookie" name="paramBtnSave"> -->
         <button type="submit" class="paramSTCreateCookie" name="paramBtnSave">Enregistrer vos choix</button>
       </div>
-      <div class="col-3">
+      <div class="col-3 ms-5">
         <button class="paramSTEraseCookie">
         <a href="param.php?clickBtnRaz=true" class="paramSTEraseCookieLnk">Revenir aux choix par défaut</a>
         </button>

@@ -1,12 +1,13 @@
 :root{
   --colBackBtn: #2c3e50;
-  --colTxtBtn: #f4e6a9;
-  --colTitleSite: #f4e6a9;
-  --colBackNav: #2c3e50;
-  --colTxtNav: rgb(185, 185, 185);
-  --colBackNavLink: rgb(87, 87, 87);
-  --colTxtNavLink: black;
+  --colTxtBtn: #39d2b4;
+  --colTitleSite: #39d2b4;
+  --colBackNav: #334B5E;
+  --colTxtNav: #39d2b4;
+  --colBackNavLink: #39d2b4;
+  --colTxtNavLink: #2c3e50;
+  --colBorderLink: #334B5E;
   --colTxtNavIcon: rgb(26, 26, 26);
-  --colBackBody: #f4e6a9;
+  --colBackBody: #f5f1df;
 }
 
