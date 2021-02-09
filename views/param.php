@@ -13,7 +13,7 @@
 
   <!-- Own styles -->
   <!-- Fixed styles -->
-  <link rel="stylesheet" href="../assets/css/style.css?v=1">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
       <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css?v=1">
@@ -49,39 +49,59 @@
   </header>
     
   <form action="" method="post">
-    <div class="row justify-content-center">
-      <div class="col-3">
+    <div class="row justify-content-center mt-5">
+      <div class="col text-center">
+        <p class="paramTitleParam">Choix du thème</p>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+      <div class="col-2">
+        <div class="paramSTtheme">
           <input type="radio" class="paramRadio" name="theme" value="1" id="themeOne" <?= (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == 1) ? "checked" : "" ?> >
-          <label for="themeOne" class="paramLabel">Thème 1</label>
+          <label for="themeOne" class="paramLabel">Thème 1</label><br>
           <input type="radio" class="paramRadio" name="theme" value="2" id="themeTwo" <?= (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == 2) ? "checked" : "" ?> >
-          <label for="themeTwo" class="paramLabel">Thème 2</label>
+          <label for="themeTwo" class="paramLabel">Thème 2</label><br>
           <input type="radio" class="paramRadio" name="theme" value="3" id="themeThree" <?= (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == 3) ? "checked" : "" ?> >
           <label for="themeThree" class="paramLabel">Thème 3</label>
-        </fieldset>
+        </div>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-3">
-        <input type="radio" class="paramRadio" name="articleTopics" value="Technologie" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Technologie") ? "checked" : "" ?> >
-        <label for="artOne" class="paramLabel">Technologie</label>
-        <input type="radio" class="paramRadio" name="articleTopics" value="Culture Médias" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Culture Médias") ? "checked" : "" ?> >
-        <label for="artTwo" class="paramLabel">Culture Médias</label>
-        <input type="radio" class="paramRadio" name="articleTopics" value="Politique" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Politique") ? "checked" : "" ?> >
-        <label for="artThree" class="paramLabel">Politique</label>
-        <input type="radio" class="paramRadio" name="articleTopics" value="Sports" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Sports") ? "checked" : "" ?> >
-        <label for="artFour" class="paramLabel">Sports</label>
-        <input type="radio" class="paramRadio" name="articleTopics" value="Actualités" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "checked" : "" ?> >
-        <label for="artFive" class="paramLabel">Actualités</label>
+    <div class="row justify-content-center mt-5">
+      <div class="col text-center">
+        <p class="paramTitleParam">Choix du flux RSS</p>
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-2">
+      <div class="col-2">
+        <div class="paramSTtheme">
+          <input type="radio" class="paramRadio" name="articleTopics" value="Technologie" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Technologie") ? "checked" : "" ?> >
+          <label for="artOne" class="paramLabel">Technologie</label><br>
+          <input type="radio" class="paramRadio" name="articleTopics" value="Culture Médias" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Culture Médias") ? "checked" : "" ?> >
+          <label for="artTwo" class="paramLabel">Culture Médias</label><br>
+          <input type="radio" class="paramRadio" name="articleTopics" value="Politique" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Politique") ? "checked" : "" ?> >
+          <label for="artThree" class="paramLabel">Politique</label><br>
+          <input type="radio" class="paramRadio" name="articleTopics" value="Sports" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Sports") ? "checked" : "" ?> >
+          <label for="artFour" class="paramLabel">Sports</label><br>
+          <input type="radio" class="paramRadio" name="articleTopics" value="Actualités" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "checked" : "" ?> >
+          <label for="artFive" class="paramLabel">Actualités</label>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col text-center">
+        <p class="paramTitleParam">Choix du nombre de sujets affichés</p>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-2 mb-5">
       <div class="col-1">
-        <input type="radio" class="paramRadio" name="nbTopics" value="5" id="fiveTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 5) ? "checked" : "" ?> >
-        <label for="fiveTopics" class="paramLabel">5</label>
-        <input type="radio" class="paramRadio" name="nbTopics" value="10" id="tenTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 10) ? "checked" : "" ?> >
-        <label for="tenTopics" class="paramLabel">10</label>
-        <input type="radio" class="paramRadio" name="nbTopics" value="Tous" id="allTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == "Tous") ? "checked" : "" ?> >
-        <label for="allTopics" class="paramLabel">Tous</label>
+        <div class="paramSTtheme">
+          <input type="radio" class="paramRadio" name="nbTopics" value="5" id="fiveTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 5) ? "checked" : "" ?> >
+          <label for="fiveTopics" class="paramLabel">5</label><br>
+          <input type="radio" class="paramRadio" name="nbTopics" value="10" id="tenTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 10) ? "checked" : "" ?> >
+          <label for="tenTopics" class="paramLabel">10</label><br>
+          <input type="radio" class="paramRadio" name="nbTopics" value="Tous" id="allTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == "Tous") ? "checked" : "" ?> >
+          <label for="allTopics" class="paramLabel">Tous</label>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center ">
@@ -89,7 +109,7 @@
         <!-- <input type="submit" value="Enregistrer vos choix" class="paramSTCreateCookie" name="paramBtnSave"> -->
         <button type="submit" class="paramSTCreateCookie" name="paramBtnSave">Enregistrer vos choix</button>
       </div>
-      <div class="col-3 offset-1">
+      <div class="col-3">
         <button class="paramSTEraseCookie">
         <a href="param.php?clickBtnRaz=true" class="paramSTEraseCookieLnk">Revenir aux choix par défaut</a>
         </button>

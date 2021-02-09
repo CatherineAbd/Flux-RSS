@@ -68,6 +68,19 @@ nav .navSTBtnParam:hover{
 }
 
 /* Param styles */
+.paramTitleParam{
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.paramSTtheme{
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
 .paramSTCreateCookie, .paramSTEraseCookie{
   width: 225px;
   height: 36px;

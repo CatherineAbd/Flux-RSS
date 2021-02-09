@@ -68,7 +68,7 @@
      ?>
         <div class="row">
           <div class="col-1">
-            <i class="fas fa-rss-square"></i>
+            <i class="fas fa-2x fa-rss-square"></i>
           </div>
           <div class="col indexTopicTitle">Voici le titre de l'article <?= $titre ?></div>
           <div class="col-2 indexTopicDate"><?= $date ?></div>
