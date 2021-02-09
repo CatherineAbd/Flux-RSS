@@ -56,15 +56,19 @@
       </div>
       <div class="row">
         <div class="col">
-          <input type="radio" class="paramRadio" name="articleTopics" value="Technologie" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Technologie") ? "checked" : "" ?> >
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/technos/" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/technos/") ? "checked" : "" ?> >
           <label for="artOne" class="paramLabel">Technologie</label>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Culture Médias" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Culture Médias") ? "checked" : "" ?> >
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/culture-medias/" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/culture-medias/") ? "checked" : "" ?> >
           <label for="artTwo" class="paramLabel">Culture Médias</label>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Politique" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Politique") ? "checked" : "" ?> >
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/politique-droits/" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/politique-droits/") ? "checked" : "" ?> >
           <label for="artThree" class="paramLabel">Politique</label>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Sports" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Sports") ? "checked" : "" ?> >
-          <label for="artFour" class="paramLabel">Sports</label>
-          <input type="radio" class="paramRadio" name="articleTopics" value="Actualités" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "checked" : "" ?> >
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/jeux/" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/jeux/") ? "checked" : "" ?> >
+          <label for="artFour" class="paramLabel">jeux</label>
+
+          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" : "" ?> >
           <label for="artFive" class="paramLabel">Actualités</label>
         </div>
       </div>
