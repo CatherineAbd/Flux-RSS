@@ -33,11 +33,15 @@
 
   <!-- Navigation part (title + parameters button) -->
   <header>
-    <h1 class="titleSite">Lecteur de flux RSS</h1>
-    <nav>
-      <a href="views/param.php">
-        <i class="fas fa-cog"></i>
-      </a>
+    <nav class="navST">
+      <h1 class="titleSite">Lecteur de flux RSS</h1>
+      <ul class="navIndexLst">
+        <li class="navItem">
+          <a href="views/param.php" class="navSTBtnParam navSTLink">
+            <i class="fas fa-2x fa-cog"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 
