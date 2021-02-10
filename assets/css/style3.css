@@ -1,12 +1,12 @@
 :root{
-  --colBackBtn: blue;
-  --colTxtBtn: lightblue;
-  --colTitleSite: purple;
-  --colBackNav: rgb(51, 51, 51);
-  --colTxtNav: rgb(185, 185, 185);
+  --colBackBtn: #fde3b5;
+  --colTxtBtn: #286B77;
+  --colTitleSite: #F50057;
+  --colBackNav: #fde3b5;
+  --colTxtNav: #286B77;
   --colBackNavLink: rgb(87, 87, 87);
-  --colTxtNavLink: black;
+  --colTxtNavLink: #ff1744;
   --colTxtNavIcon: rgb(26, 26, 26);
-  --colBackBody: rgb(194, 194, 194);
+  --colBackBody: #286B77;
 }
 
