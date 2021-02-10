@@ -78,19 +78,19 @@
     <div class="row justify-content-center mt-2">
       <div class="col-6 col-sm-4 col-md-3 col-lg-2"">
         <div class="paramSTtheme">
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/technos/" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/technos/") ? "checked" : "" ?> >
+          <input type="radio" class="paramRadio" name="articleTopics" value="Technologie,https://www.01net.com/rss/actualites/technos/" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/technos/") ? "checked" : "" ?> >
           <label for="artOne" class="paramLabel">Technologie</label><br>
 
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/culture-medias/" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/culture-medias/") ? "checked" : "" ?> >
+          <input type="radio" class="paramRadio" name="articleTopics" value="Culture Médias,https://www.01net.com/rss/actualites/culture-medias/" id="artTwo"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/culture-medias/") ? "checked" : "" ?> >
           <label for="artTwo" class="paramLabel">Culture Médias</label><br>
 
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/politique-droits/" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/politique-droits/") ? "checked" : "" ?> >
+          <input type="radio" class="paramRadio" name="articleTopics" value="politique,https://www.01net.com/rss/actualites/politique-droits/" id="artThree"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/politique-droits/") ? "checked" : "" ?> >
           <label for="artThree" class="paramLabel">Politique</label><br>
 
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/jeux/" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/jeux/") ? "checked" : "" ?> >
+          <input type="radio" class="paramRadio" name="articleTopics" value="Jeux,https://www.01net.com/rss/actualites/jeux/" id="artFour"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/jeux/") ? "checked" : "" ?> >
           <label for="artFour" class="paramLabel">Jeux</label><br>
 
-          <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" : "" ?> >
+          <input type="radio" class="paramRadio" name="articleTopics" value="Actualités,https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" id="artFive"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "Actualités") ? "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/" : "" ?> >
           <label for="artFive" class="paramLabel">Actualités</label>
         </div>
       </div>
