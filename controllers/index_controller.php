@@ -13,5 +13,5 @@
  
   $i = 0;
   $arrayModal = array();
-  $strDate = mb_convert_encoding('%d %B %Y %c','ISO-8859-9','UTF-8');// sert a traduire les dates  
+  $strDate = mb_convert_encoding('%d %B %Y %R','ISO-8859-9','UTF-8');// sert a traduire les dates  
 ?>
