@@ -99,8 +99,8 @@
 
           </div>
           <div class="col-md-6 col-lg-4 col-xl-6 indexTopicTitle">Voici le titre de l'article <?= $titre ?></div>
-          <div class="col-lg-3 col-xl-2 indexTopicDate"><?= $date ?></div>
-          <div class="col-lg-2 col-xl-1">
+          <div class="col-12 col-lg-3 col-xl-2 indexTopicDate text-center"><?= $date ?></div>
+          <div class="col-12 col-lg-2 col-xl-1 text-center">
             <button id=<?php echo "button".$i ?> type="button" class="indexTopicInfos" data-bs-toggle="modal" data-bs-target="#exampleModal">+ infos</button>
           </div>
         </div>

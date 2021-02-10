@@ -105,6 +105,10 @@ nav .navSTBtnParam:hover{
   padding-left: 20px;
 }
 
+.paramErrMsg{
+  color: red;
+}
+
 .paramSTCreateCookie, .paramSTEraseCookie{
   width: 225px;
   height: 36px;

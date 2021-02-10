@@ -13,13 +13,13 @@
 
   <!-- Own styles -->
   <!-- Fixed styles -->
-  <link rel="stylesheet" href="../assets/css/style.css?v=1">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
       <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css">
     <?php } else { ?>
     <!-- Default style -->
-      <link rel="stylesheet" href="../assets/css/style1.css?v=1">
+      <link rel="stylesheet" href="../assets/css/style1.css">
     <?php } ?>
 
   <title>Flux RSS</title>
@@ -70,6 +70,11 @@
         </div>
       </div>
     </div>
+    <div class="row justify-content-center mt-1">
+      <div class="col text-center">
+        <span class="paramErrMsg"><?= $tabMsgErr["theme"] ?? "" ?></span>
+      </div>
+    </div>
     <div class="row justify-content-center mt-5">
       <div class="col text-center">
         <p class="paramTitleParam">Choix du flux rss</p>
@@ -95,21 +100,32 @@
         </div>
       </div>
     </div>
+    <div class="row justify-content-center mt-1">
+      <div class="col text-center">
+        <span class="paramErrMsg"><?= $tabMsgErr["articleTopics"] ?? "" ?></span>
+      </div>
+    </div>
     <div class="row justify-content-center mt-5">
       <div class="col text-center">
         <p class="paramTitleParam">Choix du nombre de sujets affichés</p>
       </div>
     </div>
-    <div class="row justify-content-center mt-2 mb-5">
+    <div class="row justify-content-center mt-2">
       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
         <div class="paramSTtheme">
-          <input type="radio" class="paramRadio" name="nbTopics" value="5" id="fiveTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 5) ? "checked" : "" ?> >
+          <input type="radio" class="nbTopics" name="nbTopics" value="5" id="fiveTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 5) ? "checked" : "" ?> >
           <label for="fiveTopics" class="paramLabel">5</label><br>
-          <input type="radio" class="paramRadio" name="nbTopics" value="10" id="tenTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 10) ? "checked" : "" ?> >
+          <input type="radio" class="nbTopics" name="nbTopics" value="10" id="tenTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 10) ? "checked" : "" ?> >
           <label for="tenTopics" class="paramLabel">10</label><br>
-          <input type="radio" class="paramRadio" name="nbTopics" value="Tous" id="allTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == "Tous") ? "checked" : "" ?> >
+          <input type="radio" class="nbTopics" name="nbTopics" value="Tous" id="allTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == "Tous") ? "checked" : "" ?> >
           <label for="allTopics" class="paramLabel">Tous</label>
+          <!-- class="paramRadio" -->
         </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-1 mb-5">
+      <div class="col text-center">
+        <span class="paramErrMsg"><?= $tabMsgErr["nbTopics"] ?? "" ?></span>
       </div>
     </div>
     <div class="row justify-content-center mb-5">
