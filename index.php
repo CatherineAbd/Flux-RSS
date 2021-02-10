@@ -81,15 +81,15 @@
       $image = $item->enclosure;
       $arrayModal += array($i =>array('title'=>(string)$titre ,'description'=>strip_tags($description),'lien'=>(string)$lien) );
      ?>
-        <div class="row mb-5">
+        <div class="row justify-content-start mb-5">
           <div class="col-1">
             <i class="fas fa-2x fa-rss-square"></i>
           </div>
           <div class="col-2 "> <img src=<?= $image['url'] ?> class="img-fluid" >
 
           </div>
-          <div class="col-6 indexTopicTitle">Voici le titre de l'article <?= $titre ?></div>
-          <div class="col-2 indexTopicDate"><?= $date ?></div>
+          <div class="col-md-6 col-lg-4 col-xl-6 indexTopicTitle">Voici le titre de l'article <?= $titre ?></div>
+          <div class="col-lg-3 col-xl-2 indexTopicDate"><?= $date ?></div>
           <div class="col-lg-2 col-xl-1">
             <button id=<?php echo "button".$i ?> type="button" class="indexTopicInfos" data-bs-toggle="modal" data-bs-target="#exampleModal">+ infos</button>
           </div>
