@@ -52,19 +52,25 @@
     </nav>
   </div>
   </header>
-
-  <div class="container-fluid">
-    <div class="row text-center mb-5 mt-5">
-      <h2 class="titlePage">Les articles du flux RSS trucmuche</h2>
-    </div>
-    <?php
+  <?php
+    
     if(isset($_COOKIE['articleTopics'])){
-    $url =$_COOKIE['articleTopics'] ; 
+      $dataArticle = explode(',',$_COOKIE['articleTopics']);
+    $url =$dataArticle[1] ; 
+    $article =$dataArticle[0];
+    
     }
     else{
       $url = "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/";
+      $article = actualité;
     }
     $xml = simplexml_load_file($url);
+    ?>
+  <div class="container-fluid">
+    <div class="row text-center mb-5 mt-5">
+      <h2 class="titlePage">Les articles du flux RSS <?=$article ?></h2>
+    </div>
+    <?php
     $items = $xml->xpath('//item'); // recupere les articles
     foreach ($items as $item) {
       // var_dump($episode);
