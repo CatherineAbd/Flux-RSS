@@ -5,12 +5,15 @@
   --colBackNav: #fde3b5;
   --colTxtNav: #286B77;
   --colBackNavLink: #f8c978;
-  --colTxtNavLink: #ff1744;
+  --colTxtNavLink: #F50057;
   --colTxtNavIcon: #F50057;
   --colBackBody: #286B77;
   --fontBody: 'Simple', sans-serif;
   --fontTitle: 'Amina', sans-serif;
   --fontSizeBody: 24px;
   --fontWeightbody: bold;
+  --colBorderRadio: black;
+  --colBackRadio: #fde3b5;
+  --colRadio: #F50057;
 }
 

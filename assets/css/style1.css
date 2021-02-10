@@ -13,4 +13,7 @@
   --fontTitle: 'Freshliy', sans-serif;
   --fontSizeBody: default;
   --fontWeightbody: default;
+  --colBorderRadio: black;
+  --colBackRadio: white;
+  --colRadio: black;
 }

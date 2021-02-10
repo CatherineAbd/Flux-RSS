@@ -13,14 +13,14 @@
 
   <!-- Own styles -->
   <!-- Fixed styles -->
-  <link rel="stylesheet" href="../assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
       <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css?v=1">
-    <?php } else { ?>
-    <!-- Default style -->
-      <link rel="stylesheet" href="../assets/css/style1.css">
-    <?php } ?>
+      <?php } else { ?>
+        <!-- Default style -->
+        <link rel="stylesheet" href="../assets/css/style1.css">
+      <?php } ?>
+  <link rel="stylesheet" href="../assets/css/style.css?v=1">
 
   <title>Flux RSS</title>
 </head>
@@ -113,11 +113,11 @@
     <div class="row justify-content-center mt-2">
       <div class="col-6 col-sm-4 col-md-3 col-lg-2">
         <div class="paramSTtheme">
-          <input type="radio" class="nbTopics" name="nbTopics" value="5" id="fiveTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 5) ? "checked" : "" ?> >
+          <input type="radio" class="nbTopics paramRadio" name="nbTopics" value="5" id="fiveTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 5) ? "checked" : "" ?> >
           <label for="fiveTopics" class="paramLabel">5</label><br>
-          <input type="radio" class="nbTopics" name="nbTopics" value="10" id="tenTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 10) ? "checked" : "" ?> >
+          <input type="radio" class="nbTopics paramRadio" name="nbTopics" value="10" id="tenTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 10) ? "checked" : "" ?> >
           <label for="tenTopics" class="paramLabel">10</label><br>
-          <input type="radio" class="nbTopics" name="nbTopics" value="Tous" id="allTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == "Tous") ? "checked" : "" ?> >
+          <input type="radio" class="nbTopics paramRadio" name="nbTopics" value="Tous" id="allTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == "Tous") ? "checked" : "" ?> >
           <label for="allTopics" class="paramLabel">Tous</label>
           <!-- class="paramRadio" -->
         </div>

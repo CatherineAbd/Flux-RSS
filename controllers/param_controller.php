@@ -7,7 +7,7 @@
 
     // checking the validity of the fields
     if (isset($_POST["theme"])) {
-      if ($_POST["theme"] < 1 && $_POST["theme"] > 3){
+      if ($_POST["theme"] < 1 || $_POST["theme"] > 3){
         $tabMsgErr["theme"] = "Vous devez choisir un des thèmes avec les boutons radios";
       }
     }

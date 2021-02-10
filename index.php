@@ -13,15 +13,15 @@
 
   <!-- Own styles -->
   <!-- Fixed styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
       <link rel="stylesheet" href="assets/css/style<?= $_COOKIE['theme'] ?>.css?v=1">
-    <?php } else { ?>
-    <!-- Default style -->
-      <link rel="stylesheet" href="assets/css/style1.css">
-    <?php } ?>
-  
+      <?php } else { ?>
+        <!-- Default style -->
+        <link rel="stylesheet" href="assets/css/style1.css">
+        <?php } ?>
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
+        
   <title>Flux RSS</title>
 </head>
 
@@ -91,7 +91,7 @@
       $arrayModal += array($i =>array('title'=>(string)$titre ,'description'=>strip_tags($description),'lien'=>(string)$lien) );
      ?>
         <div class="row justify-content-start mb-5">
-          <div class="col-1">
+          <div class="col-12 col-sm-1">
             <i class="fas fa-2x fa-rss-square"></i>
           </div>
           <div class="col-2 "> <img src=<?= $image['url'] ?> class="img-fluid" >

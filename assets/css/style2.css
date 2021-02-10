@@ -13,5 +13,8 @@
   --fontTitle: 'Chaos', sans-serif;
   --fontSizeBody: 24px;
   --fontWeightbody: default;
+  --colBorderRadio: #2c3e50;
+  --colBackRadio: #39d2b4;
+  --colRadio: #2c3e50;
 }
 
