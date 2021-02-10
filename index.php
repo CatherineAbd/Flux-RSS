@@ -28,7 +28,6 @@
 <body>
   <?php
     require "controllers/index_controller.php";
-
   ?>
 
   <!-- Navigation part (title + parameters button) -->
@@ -38,7 +37,7 @@
       <h1 class="titleSite">Lecteur de flux RSS</h1>
       </div>
     </div>
-    <div class="row justify-content-between">
+    <div class="row justify-content-between ms-3 me-3">
       <span class="navItemDisabled">thème <?= isset($_COOKIE['theme']) ? $_COOKIE['theme'] : '1 (défaut)'?></span>
       <span class="navItemDisabled"><?= isset($_COOKIE['nbTopics']) ? $_COOKIE['nbTopics'] : '5'?> articles affichés</span>
       <nav class="">
@@ -124,6 +123,7 @@
   </div>
 </div>
 
+<?php require "assets/html/footer.html"; ?>
 
   <!-- Bootstrap scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

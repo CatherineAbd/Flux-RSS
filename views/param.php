@@ -37,7 +37,7 @@
       </div>
     </div>
     <nav>
-      <ul class="navParamLst">
+      <ul class="navParamLst ms-3 me-3">
         <li class="navItem">
           <a href="../index.php" class="navSTLinkHome navSTLink">
             Retour page accueil
@@ -113,11 +113,11 @@
       </div>
     </div>
     <div class="row justify-content-center mb-5">
-      <div class="col-md-4 col-lg-3 col-xl-2">
+      <div class="col-md-12 col-lg-3 col-xl-2 text-center">
         <!-- <input type="submit" value="Enregistrer vos choix" class="paramSTCreateCookie" name="paramBtnSave"> -->
         <button type="submit" class="paramSTCreateCookie" name="paramBtnSave">Enregistrer vos choix</button>
       </div>
-      <div class="col-md-5 col-lg-4 col-xl-3 ms-5">
+      <div class="col-md-12 col-lg-4 col-xl-3 text-center">
         <button class="paramSTEraseCookie">
         <a href="param.php?clickBtnRaz=true" class="paramSTEraseCookieLnk">Revenir aux choix par défaut</a>
         </button>
