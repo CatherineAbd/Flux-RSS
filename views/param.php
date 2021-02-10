@@ -62,11 +62,11 @@
       <div class="col-6 col-sm-4 col-md-3 col-lg-2"">
         <div class="paramSTtheme">
           <input type="radio" class="paramRadio" name="theme" value="1" id="themeOne" <?= (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == 1) ? "checked" : "" ?> >
-          <label for="themeOne" class="paramLabel">Thème 1</label><br>
+          <label for="themeOne" class="paramLabel">Monochrome</label><br>
           <input type="radio" class="paramRadio" name="theme" value="2" id="themeTwo" <?= (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == 2) ? "checked" : "" ?> >
-          <label for="themeTwo" class="paramLabel">Thème 2</label><br>
+          <label for="themeTwo" class="paramLabel">Beach</label><br>
           <input type="radio" class="paramRadio" name="theme" value="3" id="themeThree" <?= (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == 3) ? "checked" : "" ?> >
-          <label for="themeThree" class="paramLabel">Thème 3</label>
+          <label for="themeThree" class="paramLabel">Vintage</label>
         </div>
       </div>
     </div>

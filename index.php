@@ -28,6 +28,16 @@
 <body>
   <?php
     require "controllers/index_controller.php";
+    $theme = "Monochrome";
+    if (isset($_COOKIE['theme'])){
+      switch ($_COOKIE['theme']){
+        case 1: $theme = "Monochrome";
+                break;
+        case 2: $theme = "Beach";
+                break;
+        case 3: $theme = "Vintage";
+      }
+    }
   ?>
 
   <!-- Navigation part (title + parameters button) -->
@@ -38,7 +48,7 @@
       </div>
     </div>
     <div class="row justify-content-between ms-3 me-3">
-      <span class="navItemDisabled">thème <?= isset($_COOKIE['theme']) ? $_COOKIE['theme'] : '1 (défaut)'?></span>
+      <span class="navItemDisabled">thème <?= $theme ?></span>
       <span class="navItemDisabled"><?= isset($_COOKIE['nbTopics']) ? $_COOKIE['nbTopics'] : '5'?> articles affichés</span>
       <nav class="">
         <ul class="navIndexLst">
