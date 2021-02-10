@@ -58,6 +58,18 @@ nav .navSTBtnParam:hover{
   color: var(--colTxtNavIcon);
 }
 
+.globalFooter{
+  background-color: var(--colBackNav);
+}
+
+.globalTxtFooter{
+  color: var(--colTitleSite);
+}
+
+.globalSubTxtFooter{
+  color: var(--colTxtNav);
+}
+/*-----------------------------------------------------------------------------------------*/
 /* Index styles */
 .indexImg{
   width: 50px;
@@ -65,8 +77,20 @@ nav .navSTBtnParam:hover{
 
 .indexTopicInfos{
   border: 1px solid;
+  border-radius: 5px;
+  background-color: var(--colBackBtn);
+  color: var(--colTxtBtn);
+  transition: transform 450ms, background-color 450ms, color 450ms;
 }
 
+.indexTopicInfos:hover{
+  background-color: var(--colTxtBtn);
+  color: var(--colBackBtn);
+  border-color: var(--colBackBtn);
+  transform: scale(1.15);
+}
+
+/*----------------------------------------------------------------------------------------*/
 /* Param styles */
 .paramTitleParam{
   font-size: x-large;
@@ -100,7 +124,7 @@ nav .navSTBtnParam:hover{
 
 .paramSTEraseCookie{
   border-radius: 7px;
-  border: 1px solid;
+  /* border: 1px solid; */
   padding: 5px 10px;
   /* transform: scale(1); */
 }

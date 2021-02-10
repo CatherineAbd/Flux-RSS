@@ -13,13 +13,13 @@
 
   <!-- Own styles -->
   <!-- Fixed styles -->
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <link rel="stylesheet" href="assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
       <link rel="stylesheet" href="assets/css/style<?= $_COOKIE['theme'] ?>.css">
     <?php } else { ?>
     <!-- Default style -->
-      <link rel="stylesheet" href="assets/css/style1.css?v=1">
+      <link rel="stylesheet" href="assets/css/style1.css">
     <?php } ?>
   
   <title>Flux RSS</title>
@@ -129,7 +129,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
   <!-- own scripts -->
-
     <script>
         var arrayModal = <?php echo json_encode($arrayModal); ?>;
     </script>
