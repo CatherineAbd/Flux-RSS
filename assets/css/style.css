@@ -62,6 +62,8 @@ font-family: 'Tea';
 body{
   background-color: var(--colBackBody);
   font-family: var(--fontBody);
+  font-size: var(--fontSizeBody);
+  font-weight: var(--fontWeightbody);
 }
 
 .navST{

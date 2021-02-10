@@ -8,7 +8,9 @@
   --colTxtNavLink: #ff1744;
   --colTxtNavIcon: #F50057;
   --colBackBody: #286B77;
-  --fontBody: 'Amina', sans-serif;
-  --fontTitle: 'Simple', sans-serif;
+  --fontBody: 'Simple', sans-serif;
+  --fontTitle: 'Amina', sans-serif;
+  --fontSizeBody: 24px;
+  --fontWeightbody: bold;
 }
 
