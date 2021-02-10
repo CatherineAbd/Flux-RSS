@@ -139,3 +139,10 @@ nav .navSTBtnParam:hover{
   border-color: var(--colBackBtn);
   transform: scale(1.15);
 }
+
+@media (max-width: 766px) {
+  .img-fluid {
+    max-width: 300px;
+    height: auto;
+  }
+ }
