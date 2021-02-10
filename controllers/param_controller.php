@@ -13,9 +13,11 @@
     }
     
     if (isset($_POST["articleTopics"])) {
-      // if ($_POST["articleTopics"] < 1 && $_POST["articleTopics"] > 5){
-      //   $tabMsgErr["articleTopics"] = "Vous devez choisir un des sujets de flux avec les boutons radios";
-      // }
+      if ($_POST["articleTopics"] !="Technologie,https://www.01net.com/rss/actualites/technos/" && $_POST["articleTopics"] !="Culture Médias,https://www.01net.com/rss/actualites/culture-medias/"
+        && $_POST["articleTopics"] !="politique,https://www.01net.com/rss/actualites/politique-droits/" && $_POST["articleTopics"] !="Jeux,https://www.01net.com/rss/actualites/jeux/"
+        && $_POST["articleTopics"] != "Actualités,https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/"){
+       $tabMsgErr["articleTopics"] = "Vous devez choisir un des sujets de flux avec les boutons radios";
+        }
     }
 
     if (isset($_POST["nbTopics"])){
