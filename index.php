@@ -62,7 +62,7 @@
     }
     else{
       $url = "https://www.01net.com/rss/info/flux-rss/flux-toutes-les-actualites/";
-      $article = actualité;
+      $article = "actualité";
     }
     $xml = simplexml_load_file($url);
     ?>
