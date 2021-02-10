@@ -61,20 +61,7 @@
     </nav>
   </div>
   </header>
-  <!-- <p style="font-family: 'Amina', sans-serif"> Ceci est un test pour voir ce que donne la police Amina ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Chaos', sans-serif"> Ceci est un test pour voir ce que donne la police Chaos ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Dayrom', sans-serif"> Ceci est un test pour voir ce que donne la police Dayrom ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Freshliy', sans-serif"> Ceci est un test pour voir ce que donne la police Freshliy ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Happy Wedding', sans-serif"> Ceci est un test pour voir ce que donne la police Happy Wedding ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Honeybae', sans-serif"> Ceci est un test pour voir ce que donne la police Honeybae ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'libel-suit', sans-serif"> Ceci est un test pour voir ce que donne la police libel-suit ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'October', sans-serif"> Ceci est un test pour voir ce que donne la police October ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Pineapple', sans-serif"> Ceci est un test pour voir ce que donne la police Pineapple ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Pumpkin', sans-serif"> Ceci est un test pour voir ce que donne la police Pumpkin ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Simple', sans-serif"> Ceci est un test pour voir ce que donne la police Simple ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
-  <p style="font-family: 'Tea', sans-serif"> Ceci est un test pour voir ce que donne la police Tea ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p> -->
   <?php
-    
     if(isset($_COOKIE['articleTopics'])){
       $dataArticle = explode(',',$_COOKIE['articleTopics']);
     $url =$dataArticle[1] ; 

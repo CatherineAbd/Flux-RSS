@@ -9,9 +9,8 @@
   --colBorderLink: black;
   --colTxtNavIcon: white;
   --colBackBody: rgb(194, 194, 194);
-  --fontBody: 'Tea', sans-serif;
-  --fontTitle: 'Pineapple', sans-serif;
-  --fontSizeBody: 24px;
-  --fontWeightbody: bold;
-}
+  --fontBody: 'Pineapple', sans-serif;
+  --fontTitle: 'Freshliy', sans-serif;
+  --fontSizeBody: default;
+  --fontWeightbody: default;
 }
