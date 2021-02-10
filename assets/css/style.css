@@ -58,6 +58,18 @@ nav .navSTBtnParam:hover{
   color: var(--colTxtNavIcon);
 }
 
+.globalFooter{
+  background-color: var(--colBackNav);
+}
+
+.globalTxtFooter{
+  color: var(--colTitleSite);
+}
+
+.globalSubTxtFooter{
+  color: var(--colTxtNav);
+}
+/*-----------------------------------------------------------------------------------------*/
 /* Index styles */
 .indexImg{
   width: 50px;
@@ -78,6 +90,7 @@ nav .navSTBtnParam:hover{
   transform: scale(1.15);
 }
 
+/*----------------------------------------------------------------------------------------*/
 /* Param styles */
 .paramTitleParam{
   font-size: x-large;

@@ -13,7 +13,7 @@
 
   <!-- Own styles -->
   <!-- Fixed styles -->
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v=1">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
       <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css">
@@ -30,7 +30,7 @@
   require "../controllers/param_controller.php";
 ?>
 
-  <header class="navST">
+  <header class="navST sticky-top">
     <div class="row">
       <div class="col text-center">
         <h1 class="titleSite">Lecteur de flux RSS</h1>
@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="row justify-content-center mt-2">
-      <div class="col-2">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2"">
         <div class="paramSTtheme">
           <input type="radio" class="paramRadio" name="theme" value="1" id="themeOne" <?= (isset($_COOKIE["theme"]) && $_COOKIE["theme"] == 1) ? "checked" : "" ?> >
           <label for="themeOne" class="paramLabel">Thème 1</label><br>
@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="row justify-content-center mt-2">
-      <div class="col-2">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2"">
         <div class="paramSTtheme">
           <input type="radio" class="paramRadio" name="articleTopics" value="https://www.01net.com/rss/actualites/technos/" id="artOne"<?= (isset($_COOKIE["articleTopics"]) && $_COOKIE["articleTopics"] == "https://www.01net.com/rss/actualites/technos/") ? "checked" : "" ?> >
           <label for="artOne" class="paramLabel">Technologie</label><br>
@@ -101,7 +101,7 @@
       </div>
     </div>
     <div class="row justify-content-center mt-2 mb-5">
-      <div class="col-1">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
         <div class="paramSTtheme">
           <input type="radio" class="paramRadio" name="nbTopics" value="5" id="fiveTopics" <?= (isset($_COOKIE["nbTopics"]) && $_COOKIE["nbTopics"] == 5) ? "checked" : "" ?> >
           <label for="fiveTopics" class="paramLabel">5</label><br>
@@ -112,12 +112,12 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center ">
-      <div class="col-2">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 col-lg-3 col-xl-2">
         <!-- <input type="submit" value="Enregistrer vos choix" class="paramSTCreateCookie" name="paramBtnSave"> -->
         <button type="submit" class="paramSTCreateCookie" name="paramBtnSave">Enregistrer vos choix</button>
       </div>
-      <div class="col-3 ms-5">
+      <div class="col-md-5 col-lg-4 col-xl-3 ms-5">
         <button class="paramSTEraseCookie">
         <a href="param.php?clickBtnRaz=true" class="paramSTEraseCookieLnk">Revenir aux choix par défaut</a>
         </button>
@@ -125,6 +125,7 @@
     </div>
   </form>
 
+  <?php require "../assets/html/footer.html"; ?>
 
   
   <!-- Bootstrap scripts -->
