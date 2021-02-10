@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
-      <link rel="stylesheet" href="assets/css/style<?= $_COOKIE['theme'] ?>.css">
+      <link rel="stylesheet" href="assets/css/style<?= $_COOKIE['theme'] ?>.css?v=1">
     <?php } else { ?>
     <!-- Default style -->
       <link rel="stylesheet" href="assets/css/style1.css">
@@ -61,6 +61,18 @@
     </nav>
   </div>
   </header>
+  <!-- <p style="font-family: 'Amina', sans-serif"> Ceci est un test pour voir ce que donne la police Amina ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Chaos', sans-serif"> Ceci est un test pour voir ce que donne la police Chaos ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Dayrom', sans-serif"> Ceci est un test pour voir ce que donne la police Dayrom ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Freshliy', sans-serif"> Ceci est un test pour voir ce que donne la police Freshliy ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Happy Wedding', sans-serif"> Ceci est un test pour voir ce que donne la police Happy Wedding ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Honeybae', sans-serif"> Ceci est un test pour voir ce que donne la police Honeybae ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'libel-suit', sans-serif"> Ceci est un test pour voir ce que donne la police libel-suit ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'October', sans-serif"> Ceci est un test pour voir ce que donne la police October ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Pineapple', sans-serif"> Ceci est un test pour voir ce que donne la police Pineapple ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Pumpkin', sans-serif"> Ceci est un test pour voir ce que donne la police Pumpkin ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Simple', sans-serif"> Ceci est un test pour voir ce que donne la police Simple ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p>
+  <p style="font-family: 'Tea', sans-serif"> Ceci est un test pour voir ce que donne la police Tea ET CA EN MAJUSCULES POUR AVOIR UN MEILLEUR APERCU</p> -->
   <?php
     
     if(isset($_COOKIE['articleTopics'])){
@@ -98,7 +110,7 @@
           <div class="col-2 "> <img src=<?= $image['url'] ?> class="img-fluid" >
 
           </div>
-          <div class="col-md-6 col-lg-4 col-xl-6 indexTopicTitle">Voici le titre de l'article <?= $titre ?></div>
+          <div class="col-md-6 col-lg-4 col-xl-6 indexTopicTitle"><?= $titre ?></div>
           <div class="col-12 col-lg-3 col-xl-2 indexTopicDate text-center"><?= $date ?></div>
           <div class="col-12 col-lg-2 col-xl-1 text-center">
             <button id=<?php echo "button".$i ?> type="button" class="indexTopicInfos" data-bs-toggle="modal" data-bs-target="#exampleModal">+ infos</button>

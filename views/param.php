@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../assets/css/style.css">
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
-      <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css">
+      <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css?v=1">
     <?php } else { ?>
     <!-- Default style -->
       <link rel="stylesheet" href="../assets/css/style1.css">

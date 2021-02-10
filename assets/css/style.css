@@ -4,13 +4,64 @@
 --colTxtBtn: white; */
 }
 
+@font-face {
+  font-family: 'Amina';
+  src: url('fonts/Amina Reska.ttf');
+}
+@font-face {
+    font-family: 'Chaos';
+  src: url('fonts/Chaos\ And\ Madness.ttf');
+}
+@font-face {
+  font-family: 'Dayrom';
+  src: url('fonts/DAYROM__.ttf');
+}
+@font-face {
+  font-family: 'Freshliy';
+  src:url('fonts/Freshliy.ttf');
+}
+@font-face {
+  font-family: 'Happy Wedding';
+  src:url('fonts/Happy\ Wedding.ttf');
+}
+@font-face {
+font-family: 'Honeybae';
+  src:url('fonts/Honeybae.ttf');
+}
+@font-face {
+font-family: 'libel-suit';
+  src:url('fonts/libel-suit-rg.ttf');
+}
+@font-face {
+font-family: 'October';
+  src: url('fonts/October\ Story.ttf');
+}
+@font-face {
+font-family: 'Pineapple';
+  src:url('fonts/Pineapple\ Grass.ttf');
+}
+@font-face {
+font-family: ('Pumpkin');
+  src: url('fonts/Pumpkin\ Jack.ttf');
+}
+@font-face {
+font-family: 'Simple';
+  src: url('fonts/Simple\ Print.ttf');
+}
+@font-face {
+font-family: 'Tea';
+  src: url('fonts/Tea\ Bag.ttf');
+}
+
 /* Global styles */
 .titleSite{
   color: var(--colTitleSite);
+  font-family: var(--fontTitle);
 }
 
 body{
   background-color: var(--colBackBody);
+  font-family: var(--fontBody);
 }
 
 .navST{
