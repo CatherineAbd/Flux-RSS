@@ -116,11 +116,11 @@ nav .navSTBtnParam:hover{
 }
 
 .globalTxtFooter{
-  color: var(--colTitleSite);
+  color: var(--colTxtFooter);
 }
 
 .globalSubTxtFooter{
-  color: var(--colTxtNav);
+  color: var(--colSubTxtFooter);
 }
 /*-----------------------------------------------------------------------------------------*/
 /* Index styles */

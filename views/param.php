@@ -15,12 +15,12 @@
   <!-- Fixed styles -->
   <?php 
     if (isset($_COOKIE['theme'])){ ?>
-      <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css?v=1">
+      <link rel="stylesheet" href="../assets/css/style<?= $_COOKIE['theme'] ?>.css">
       <?php } else { ?>
         <!-- Default style -->
         <link rel="stylesheet" href="../assets/css/style1.css">
       <?php } ?>
-  <link rel="stylesheet" href="../assets/css/style.css?v=1">
+  <link rel="stylesheet" href="../assets/css/style.css">
 
   <title>Flux RSS</title>
 </head>
